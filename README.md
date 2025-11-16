@@ -19,4 +19,5 @@ Foydalanuvchi hisoblar orasida mablag‘ o‘tkazishi, balansni ko‘rishi va no
 ![main](images/main.png)
 ![balans](images/balans.png)
 ![wrongNumber](images/wrongNumber.png)
+![wrongNumber](images/balansB.png)
 
