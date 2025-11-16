@@ -14,3 +14,9 @@ Foydalanuvchi hisoblar orasida mablag‘ o‘tkazishi, balansni ko‘rishi va no
 ❗ Yaroqsiz son yoki balans yetarli bo‘lmagan holatda xatolik chiqarish
 
 🎨 Chiroyli JavaFX UI (CSS bilan)
+
+
+![main](images/main.png)
+![balans](images/balans.png)
+![wrongNumber](images/wrongNumber.png)
+
