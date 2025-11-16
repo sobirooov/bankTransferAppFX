@@ -7,37 +7,38 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="uz.javazam.banktransferappfx.MainController">
+<VBox   alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+        fx:controller="uz.javazam.banktransferappfx.MainController"
+        stylesheets="style.css">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <HBox>
-        <VBox>
-        <Label >Hisob A</Label>
-        <Label fx:id="transferA">$300</Label>
+    <HBox spacing="30">
+        <VBox spacing="10">
+        <Label styleClass="label-title">Hisob A</Label>
+        <Label fx:id="transferA" styleClass="label-balance">$300</Label>
         </VBox>
 
-        <VBox>
-            <Label>Hisob B</Label>
-            <Label fx:id="transferB">$1200</Label>
-        </VBox>
-    </HBox>
-
-    <HBox>
-        <TextField fx:id="transferSum"></TextField>
-    </HBox>
-
-    <HBox>
-        <VBox>
-            <Button text="to B send" onAction="#send2B"/>
-            <Button text="to A send" onAction="#send2A"/>
+        <VBox spacing="10">
+            <Label styleClass="label-title">Hisob B</Label>
+            <Label fx:id="transferB" styleClass="label-balance">$1200</Label>
         </VBox>
     </HBox>
 
     <HBox>
-        <Label fx:id="invalidNum"></Label>
+        <TextField fx:id="transferSum" promptText="Enter amount" styleClass="text-field"/>
+    </HBox>
+
+    <HBox spacing="20">
+        <VBox spacing="20">
+            <Button text="to B send" onAction="#send2B"  styleClass="button-action"/>
+            <Button text="to A send" onAction="#send2A"  styleClass="button-action"/>
+        </VBox>
+    </HBox>
+
+    <HBox>
+        <Label fx:id="invalidNum" styleClass="label-error"/>
     </HBox>
 
 </VBox>
